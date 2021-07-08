@@ -1,0 +1,86 @@
+/* SETTINGS CONTENT */
+%standardSidebarView {
+	> %settingsContentRegion {
+		background: transparent;
+	}
+}
+%settingsContentRegion {
+	%settingsContentScroller,
+	%settingsContentSidebarScroller {
+		background: transparent;
+	}
+}
+
+// CLOSE BUTTON
+%themeDark {
+	%settingsCloseButton {
+		border-color: hsla(0, 0%, 100%, .4);
+		&:hover {
+			border-color: hsla(0, 0%, 100%, .6);
+			background-color: transparent;
+		}
+		>svg>path {
+			fill:hsla(0, 0%, 100%, .6);
+		}
+	}
+	%settingsCloseButtonKeybind {
+	color: hsla(0, 0%, 100%, .6);
+	}
+}
+
+// AVATAR UPLOADER
+.avatarUploaderInner-3UNxY3 {
+	background-color: hsla(0, 0%, 100%, .05);
+}
+.theme-dark .avatarUploaderIndicator-2G-aIZ {
+	background-color: var(--main-color);
+	background-image: none;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-image: url(https://discord.com/assets/d5c25e76af04cea8997e4a060572feae.svg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		filter: brightness(0) invert(1);
+		pointer-events: none;
+	}
+}
+
+// ITEM CARDS
+%themeDark {
+	.card-FDVird:before {
+		background-color: hsla(0, 0%, 0%, .4);
+		border: hsla(0, 0%, 100%, .07);
+	}
+    .button-2CgfFz {
+		background-color: hsla(0, 0%, 0%, .4);
+		border: hsla(0, 0%, 100%, .07);
+		&:hover {
+			background-color: hsla(0, 0%, 0%, .7);
+			border: hsla(0, 0%, 100%, .07);
+		}
+	}
+	.card-3Qj_Yx  {
+		background-color: rgba(0, 0, 0, .4);
+		border-color: hsla(0, 0%, 100%, .07);
+		a {
+			color: var(--url-color);
+		}
+	}
+}
+// New webkit pulse
+.pulse-3KGsIm {
+	animation:none;
+}
+
+// WARNING SHAKE
+%shakeable[style*="transform"] {
+	transform:none !important;
+	%bg{
+		animation: cv-shake .5s ease-in;
+	}
+}

@@ -1,0 +1,58 @@
+/* PRIVATE CALL */
+%call {
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+}
+%call%callMinimum {
+	background: rgba(0, 0, 0, calc(var(--background-shading) * .6));
+}
+
+
+// VIDEO STREAM
+%videoParticipantTile {
+	background-color: transparent;
+}
+%videoParticipantsButton {
+	background-color: rgba(0, 0, 0, .4);
+	&:hover {
+		background-color: rgba(0, 0, 0, .6);
+	}
+}
+%videoAvatarBorder {
+	&%videoAvatarSpeaking {
+		box-shadow: inset 0 0 0 2px var(--main-color);
+	}
+}
+
+// ACTION BUTTON
+%button%callCenterButton {
+	border-radius: 50%;
+}
+%callButtonColorable {
+	&%callButtonPrimaryDark {
+		background-color: rgba(0, 0, 0, .6);
+		color: #fff;
+		&:hover {
+			background-color: var(--hover-color);
+			color: #fff;
+		}
+	}
+	&%callButtonWhite {
+		color: #fff;
+		&:not(:hover) {
+			background-color: $main-color !important;
+		}
+		&:hover {
+			background-color: var(--hover-color);
+		}
+		%callButtonActive {
+			background-color: transparent;
+		}
+		%callCenterIcon,
+		%micSlash {
+			color: #fff;
+		}
+	}
+	%callButtonRed {
+		background-color: var(--danger-color);
+	}
+}

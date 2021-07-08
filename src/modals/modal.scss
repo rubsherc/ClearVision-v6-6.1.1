@@ -1,0 +1,12 @@
+/* MODAL */
+%themeDark {
+	%modal,
+	%modalRoot {
+		background: rgba(0, 0, 0, .5);
+		box-shadow: none;
+		%modalFooter {
+			background: transparent;
+			box-shadow: none;
+		} 
+	}
+}

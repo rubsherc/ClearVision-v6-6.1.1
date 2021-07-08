@@ -1,0 +1,24 @@
+/* BD SETTINGS SIDEBAR ICONS */
+%settingsSidebar {
+
+	// BD ICON MAP
+	$bd: (
+		// Settings
+		"settings": "https://clearvision.gitlab.io/icons/betterdiscord.svg",
+		// Custom CSS
+		"customcss": "https://clearvision.gitlab.io/icons/code_braces.svg",
+		// Plugins
+		"plugins": "https://clearvision.gitlab.io/icons/puzzle.svg",
+		// Themes
+		"themes": "https://clearvision.gitlab.io/icons/palette.svg",		
+	);
+	
+	// BD ICON STYLES
+	%tabBarItem {
+		@each $i, $u in $bd {
+			&.bd-#{$i}-tab:before {
+				background-image: url(#{$u});	
+			}
+		}
+	}
+}

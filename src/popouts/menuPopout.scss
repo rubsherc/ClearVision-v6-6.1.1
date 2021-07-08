@@ -1,0 +1,50 @@
+/* MENU HEADER POPOUT */
+
+%menuPopout {
+	background-color: rgba(0, 0, 0, .8);
+	%menuPopoutItem {
+		color: hsla(0, 0%, 100%, .7);
+		transition: all .15s ease-in-out;		
+		&%menuPopoutItemHover {
+			background-color: var(--hover-color);
+			color: #fff;
+			%menuPopoutCheckbox,
+			%menuPopoutRadio {
+				color: #fff;
+			}
+			%menuPopoutCheck {
+				color: var(--main-color);
+			}
+		}
+		%menuPopoutCheckbox,
+		%menuPopoutRadio {
+			color: var(--main-color);
+		}
+	}
+	 %menuPopoutItemInvite {
+	    color: var(--main-color);
+	}
+	%menuPopoutItemLeave {
+	    color: var(--danger-color);
+		&%menuPopoutItemHover {
+		    background-color: var(--danger-color);
+			color: #fff;
+			%menuPopoutIcon {
+				transform: rotateY(180deg);
+				transition: all .15s ease-in-out;
+			}
+		}
+	}
+}
+
+// QUICK REACTIONS
+%quickReactButton {
+	background-color: transparent;
+	&%quickReactButtonFocused
+	&:hover {
+		background-color: transparent;
+	}
+	&%quickReactButtonFocused {
+		box-shadow: 0 0 2px 2px var(--hover-color);
+	}
+}

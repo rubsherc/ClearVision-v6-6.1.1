@@ -1,0 +1,130 @@
+/* MESSAGE */
+%messages {
+	%messageGroup {
+		transition: background .3s ease-in-out;
+		&:active {
+			background: hsla(0, 0%, 100%, .1);
+			transition-delay: .3s;
+		}
+	}
+}
+%message {
+
+	// HEADER
+	%avatarLarge {
+		transition: all .3s ease-in-out, transform .1s ease-in-out;
+		&:active {
+			transform: scale(.9);
+		}	
+	}
+	%messageTimestamp,
+	%messageTimestampAlt {
+		text-align: center;
+		color: hsla(0, 0%, 100%, .5);
+	}
+
+	// CONTENT
+	%messageSystemContainer {
+		color: hsla(0, 0%, 100%, .5);
+	}
+	%markup {
+		color: var(--text-normal);
+	}
+
+	// MENTIONED
+	%mentioned {
+		background: hsla(0, 0%, 100%, .1);
+		&:after {
+			background: hsla(0, 0%, 100%, .1);
+			border-left: 4px solid $main-color;
+			border-radius: 2px 0 0 2px;
+		}
+	}
+
+	// BLOCKQUOTE
+	%markup {
+		%blockquoteDivider {
+			background: hsla(0, 0%, 100%, .2);
+			border-radius: 0;
+		}
+	}
+
+	// MESSAGE JUMP
+	> div[style^="border-radius: 2px;"] {
+		&[style$="0);"] {
+			animation: none;
+		}
+		border-radius: 3px !important;
+		animation: cv-message-jump 2s ease-in-out;
+	}
+}
+
+// LINKS
+%fakeLink,
+%embed > %embedTitleLink,
+%markup a,
+.content-s2SEQO a,
+.colorLink-2vG20E {
+	color: var(--url-color) !important;
+}
+
+// REPLY
+%messageReplied {
+	&:before {
+		border-color: $main-color;
+	}
+	%messageRepliedTextPreview {
+		opacity: .7;
+		&%messageRepliedTextPreviewClickable:hover {
+			opacity: 1;
+		}
+		%messageRepliedTextContent {
+			color: #fff;
+		}
+		%messageRepliedTextPlaceholder {
+			color: $main-color;
+		}
+	}
+	%messageRepliedTextContentIcon {
+		opacity: .7;
+		%messageRepliedTextPreview:hover + & {
+			opacity: 1;
+		}
+	}
+	&%messageRepliedExecutedCommand {
+		%messageRepliedCommandName {
+			color: $main-color
+		}
+	}
+}
+
+// BUTTONS
+%messageButtonWrapper {
+	background-color: transparent;
+	%messageButton {
+		color: hsla(0, 0%, 100%, .7);
+		&:hover,
+		&%messageButtonSelected {
+			background-color: hsla(0, 0%, 100%, .1);
+			color: #fff;
+		}
+	}
+}
+
+// EDITING
+%themeDark %operations {
+	color: hsla(0, 0%, 100%, .5);
+	>a {
+		color: var(--main-color);
+	}
+}
+
+%replyingToIndicator {
+	background-color: hsla(0, 0%, 100%, .05);
+	%mouseModeFullMotion &:hover {
+		background-color: hsla(0, 0%, 100%, .08);
+	}
+	&:before {
+		background-color: var(--main-color);
+	}
+}

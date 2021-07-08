@@ -1,0 +1,30 @@
+{
+  "name": "clearvision",
+  "version": "6.1.1",
+  "description": "Highly customizable theme for BetterDiscord.",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf {test,public}",
+    "test": "sass --style=expanded --no-source-map hljs.scss:test/hljs.css main.scss:test/main.css",
+    "build": "npm run build.sass && npm run build.prefix",
+    "build.sass": "sass --style=expanded --no-source-map hljs.scss:public/hljs.css main.scss:public/main.css",
+    "build.prefix": "postcss public/*.css --dir=public --use=autoprefixer  -b=\"> 5%\" --no-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClearVision/ClearVision-v6.git"
+  },
+  "author": "Zerthox",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ClearVision/ClearVision-v6/issues"
+  },
+  "homepage": "https://github.com/ClearVision/ClearVision-v6/README.md",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {}
+}

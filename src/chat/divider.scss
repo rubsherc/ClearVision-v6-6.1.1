@@ -1,0 +1,21 @@
+/* CHAT DIVIDER */
+
+// UNREAD
+%dividerUnread { 
+	border-color: $main-color;
+}
+%unreadPill { 
+	background-color: $main-color;
+}
+%unreadPillCapStroke { 
+	fill: $main-color; 
+	color: $main-color;
+}
+
+// DATE
+%dividerDate {
+	background: rgba(255,255,255,0.07);
+	color: var(--main-color);
+	text-transform: uppercase;
+	opacity: 0.9;
+}

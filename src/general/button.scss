@@ -1,0 +1,110 @@
+/* BUTTON */
+%button {
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+// BUTTON FILLED
+%appMount {
+	%buttonFilledGreen,
+	%buttonFilledGrey,
+	%buttonFilledBrand,
+	%buttonFilledPrimary {
+		background: $main-color;
+		&:hover,
+		&%buttonHasHover:hover {
+			background: $hover-color;
+		}
+		&:disabled {
+			background: $main-color !important;
+		}
+	}
+}
+%buttonFilledRed {
+	background-color: cv("colors.danger");
+}
+%buttonFilledWhite {
+	background: hsla(0, 0%, 100%, .1);
+	> %buttonContents {
+		color: hsla(0, 0%, 100%, .7);
+		transition: inherit;
+	}
+	&:hover {
+		background: hsla(0, 0%, 100%, .2) !important;
+		> %buttonContents {
+			color: #fff;
+		}
+	}
+	&:disabled {
+		background: hsla(0, 0%, 100%, .1) !important;
+		> %buttonContents {
+			color: hsla(0, 0%, 100%, .5);
+		}
+	}
+}
+
+// BUTTON INVERTED
+%buttonInvertedBrand,
+%buttonInvertedGreen {
+	background: #fff;
+    color: $main-color;
+	&:hover {
+		background: hsla(0, 0%, 100%, .95);
+		color: $hover-color;
+	}
+	&:disabled {
+		background: hsla(0, 0%, 100%, .3);
+	}
+}
+
+// BUTTON OUTLINED
+%appMount {
+	%buttonOutlinedWhite,
+	%buttonOutlinedPrimary,
+	%buttonOutlinedGreen,
+	%buttonOutlinedBrand {
+		background: transparent;
+		border-color: $main-color;
+		color: hsla(0, 0%, 100%, .8);
+		&:hover {
+			background: transparent;
+			border-color: $hover-color;
+			color: #fff;
+		}
+	}
+}
+%appMount {
+	%buttonOutlinedRed {
+		background: transparent;
+		border-color: cv("colors.danger");
+		color: hsla(0, 0%, 100%, .8);
+		&:hover {
+			background: transparent;
+			border-color: $hover-color;
+			color: #fff;
+		}
+	}
+}
+
+
+// BUTTON LINK
+%buttonLinkWhite {
+	color: #fff;
+	&:hover {
+		text-shadow: 0 0 3px;
+		> %buttonContents {
+			background-image: none;
+		}
+	}
+}
+
+//BUTTON CIRCLE
+%buttonCircle {
+	background-color: $main-color;
+	color: #fff;
+	&:hover {
+		&:not(%buttonCircleDisabled) {
+			background-color: $hover-color;
+		}
+	}
+}

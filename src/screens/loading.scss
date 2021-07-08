@@ -1,0 +1,20 @@
+/* LOADING SCREEN */
+%loadingScreen {
+	background: rgba(0, 0, 0, .9);
+}
+%loadingLinks {
+	color: $main-color;
+	opacity: 1 !important;
+	@include hover-shadow;
+}
+%loadingPath {
+	stroke: $main-color !important;
+}
+%loadingPath2 {
+	opacity: .5 !important;
+}
+%loadingPath3 {
+	opacity: .3 !important;
+}
+/*mini loading screen on uncached channel/server */
+.wrapper-3vR61M, .wrapper-1F5TKx {background-color: transparent;}

@@ -1,0 +1,141 @@
+/* The following CSS was made in part by Leozard, LeafyLuigi, KitKat, Scars and Cruxie */
+
+/* Server dropdown menu server boost */
+.theme-dark .perksModal-fSYqOq, .theme-dark .tierMarkerBackground-3q29am {background-color: transparent;}
+.theme-dark .ctaBar-2UsjF2, .theme-dark .perk-2WeBWW, .theme-dark .tierBody-16Chc9, .theme-dark .tierHeaderLocked-1s2JJz, .theme-dark .barBackground-2EEiLw {background-color: var(--backdrop-overlay);}
+.tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37));"] {background: var(--backdrop-overlay) !important;}
+.theme-dark .barForeground-3KglC8 {background-color: rgba(244,127,255,0.9);}
+
+/* Invite Modal */
+.inviteRow-2L02ae:hover {background-color: rgba(255,255,255,0.4);}
+
+/* Invite from web browser modal */
+.theme-dark .contentWrapper-3WC1ID {background: var(--background-overlay)}
+.pill-1dHPfk {background-color: transparent;}
+.lookLink-9FtZy-.colorBrand-3pXr91{color: var(--main-color);}
+.lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {background-image: linear-gradient(0deg,transparent,transparent 1px,var(--main-color) 0,var(--main-color) 2px,transparent 0);}
+
+/* Dropdown voice call region changer */
+.theme-dark .quickSelectPopout-X1hvgV {background: var(--backdrop-overlay);}
+
+/* Stream Ended background */
+.theme-dark .container-2oTpPc, .root-25RxKh {background: transparent;}
+
+.theme-dark .previewContainer-12UlHl{background: transparent;}
+
+/* Invalid Gift | ref: https://discord.gift/1 */
+.theme-dark .tile-2OwFgW {background-color: var(--background-overlay);}
+.theme-dark .tile-2OwFgW:hover {background-color: var(--backdrop-overlay);}
+
+/* Server unavailable screen. Slight easter egg. */
+.content-MLh4nU, .category-2haXBH, .channelIcon-1TvDoP, .channelName-2wrHHc {background-color: var(--background-overlay);}
+
+/* Games tab */
+.scroller-1IIF0A, .scroller-2XE8rp, .header-39GIC8 {background-color: transparent;}
+
+/* Volume slider */
+.theme-dark .bubble-3we2di {background-color: var(--main-color);}
+.theme-dark .bubble-3we2di:before {border-top-color: var(--main-color);}
+
+/*
+  ==/ NEW FRIENDS LIST because discord keeps changing shit /==
+*/
+/* No friends playing games */
+.theme-dark .wrapper-3UweLa,
+/* No friends playing games? Not sure. */
+.emptyCard-1RJw8n {background-color: var(--background-overlay);}
+
+/* BD sliders were forgotten about in CV, apparently. */
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {background-color: var(--main-color);}
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {background-color: rgba(255,255,255,0.3);}
+
+/* default text */
+.defaultValue-3gC7yw .markValue-2DwdXI {color: var(--success-color);}
+
+/* Search dropdown */
+.theme-dark .container-3ayLPN {background-color: rgba(0,0,0,0.8);}
+
+/* mentions */
+.messageContainer-gbhlwo {background-color: var(--background-overlay);}
+.guildIcon-3Co6k- {background-color: transparent;}
+
+
+/* Calls apparently broke */
+.container-2x5lvQ {background: transparent;}
+.noiseCancellationPopout-iRK2A0 {background-color: var(--backdrop-overlay);}
+
+.streamPreview-3YL8OQ {background-color: var(--background-color);}
+.imageSelected-4Kl81J {border-color: var(--main-color);}
+
+/*Border hover and select on search options*/
+.tab-EiCZG6.selected-3gXBLQ, .tab-EiCZG6:hover {border-bottom: 2px solid var(--main-color) !important;}
+
+/* birthday confirmation modal */
+.theme-dark .footer-3rDWdC {background-color: var(--backdrop-overlay); box-shadow: none;}
+.required-7sPBq3 {color: var(--danger-color);}
+
+/* Unread Popout p.s. hecc u discord */
+.tutorial-3w5I9h, .container-enaOkj, .messages-3G3erD {background-color: var(--background-overlay);}
+.messages-3G3erD, .channelHeader-3Gd2xq{padding-right: 10px;padding-left: 20px;}
+.collapseButton-2ZsEjz{padding-left: 10px;}
+.messageContainer-1ei2zM:hover .jumpButton-3vBz5U{background-color: transparent;}
+.tutorialIcon-3f1miQ {background-color: var(--main-color); color: #fff;}
+
+
+/* You're all caught up*/
+.icon-1Itzco{background-color: var(--background-overlay); color: #fff;}
+
+/* Announcement settings */
+.theme-dark .row-_dKwg4:nth-child(odd) {background-color: var(--background-overlay);}
+
+/* Welcome Screen - Server settings */
+.enableContainer-1ZFFhM, .previewContainer-1OoJ8M, .welcomeChannel-1wxdCJ, .descriptionInput-1C1q6Z{background-color: var(--background-overlay);}
+
+/* Boost level unlock loading */
+.theme-dark .tierHeaderUnlocked-2RhWqn {background-color: var(--background-overlay);}
+
+/* Search results */
+.channelName-1JRO3C {background: transparent;}
+.searchResult-9tQ1uo:after {background-image:none;}
+.searchResult-9tQ1uo:before {background-image:none;}
+.searchResultMessage-1fxgXh.hit-1fVM9e {background-color: transparent; border: none; box-shadow: none;}
+.searchResult-9tQ1uo.expanded-w_LCGl  {background-color: var(--background-overlay); border:none;}
+.searchResult-9tQ1uo .hit-1fVM9e .messageGroupCozy-2-Q370 {background-color: var(--background-overlay);}
+.searchResult-9tQ1uo:focus-within .jumpButton-JkYoYK, .searchResult-9tQ1uo:hover .jumpButton-JkYoYK {background-color: var(--backdrop-overlay);}
+.expanded-w_LCGl .searchResultMessage-1fxgXh.hit-1fVM9e{background-color: transparent;}
+
+/* Server boost bar */
+.barSecondary-3B1aP2 {background-color: var(--main-color);}
+
+/* Discord Store transparency */
+.scroller-1JpcIc {background-color:transparent;}
+
+/* Enable community words, e.g. learn latin, python */
+.guildDetails-2p1NmK {background-color: transparent;}
+
+/* Fixed menu selection color when dragging server drop-down */
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {background-color: var(--hover-color);}
+
+/* Not enough server members warning */
+.notEnoughMembersError-1KwJkE {background-color: var(--background-help-warning);}
+
+/* Community overview->settings box */
+.upsellContent-1JlpHe, .upsellFooter-ZYsio_, .upsellContainer-L9xv7w {background-color: transparent;}
+
+/* Enable discover icons and cards */
+.theme-dark .card-3_CqkU, .theme-dark .iconMask-30Tvqs, .perkArt-1SGWbA {background-color: var(--background-overlay);}
+
+/* Webhooks, channels followed icons */
+.iconWrapper-lS1uig {background-color: var(--background-overlay);}
+
+/* Fixes Add another channel button drag color */
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {background-color: var(--hover-color);}
+
+/* Server is going to lose a level popout */
+.message-39hdqk {width: 110%;}
+.close-jnIfru:hover {color:var(--danger-color);}
+
+.channelHeader-3Gd2xq {background-color: var(--backdrop-overlay);} /*message popout stuff */
+/* a few dropdowns somewhere idk */
+.css-n57xjs-menu {background-color: var(--backdrop-overlay);}
+.css-3vaxre-menu {background-color: var(--backdrop-overlay);}

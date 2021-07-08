@@ -1,0 +1,38 @@
+/* APP NOTICE */
+
+%notice {
+	border-radius: 3px;
+	&%noticeDefault {
+		background: rgba(#f26522, .6);
+	}
+	&%noticePremium {
+		background: rgba(#202225, .6);
+	}
+	&%noticePremiumGrandfathered {
+		background: linear-gradient(270deg, rgba(#b3aeff, .6), rgba(#738ef5 , .6));
+	}
+	&%noticeInfo {
+		background: rgba(#4a90e2, .6);
+	}
+	&%noticeSuccess {
+		background: rgba(#43b581, .6);
+	}
+	&%noticeDanger {
+		background: rgba(#f04747, .6);
+	}
+	&%noticeStreamerMode {
+		background: rgba(cv("const:colors.twitch-purple"), .6);
+	}
+	&%noticeFacebook {
+		background: rgba(cv("const:colors.facebook-blue"), .6);
+	}
+	&%noticeSpotify {
+		background: rgba(cv("const:colors.spotify-green"), .6);
+	}
+	&%noticeBrand {
+		background: rgba(cv("const:colors.discord-blurple"), .6);
+	}
+	%noticeTextLink {
+		color: #fff;
+	}
+}
